@@ -191,7 +191,7 @@ st.markdown("""
 st.markdown("""
 <div class="main-header">
     <h1>📘 TRỢ LÝ SOẠN GIÁO ÁN TỰ ĐỘNG (NLS)</h1>
-    <p>Tác giả: Lù Seo Sần - Trường PTDTBT Tiểu học Bản Ngò - ĐT: 097 1986 343</p>
+    <p>Tác giả: Trần Văn Thọ - Trường PTDTBT THCS MƯỜNG LẠN - ĐT: 097 3989 800</p>
 </div>
 """, unsafe_allow_html=True)
 
@@ -235,8 +235,8 @@ if uploaded_files:
 st.markdown('<div class="section-header">📝 2. THÔNG TIN BÀI DẠY</div>', unsafe_allow_html=True)
 
 c1, c2 = st.columns(2)
-with c1: lop = st.text_input("📚 Lớp:", "Lớp 4")
-with c2: ten_bai = st.text_input("📌 Tên bài học:", placeholder="Ví dụ: Học hát bài...")
+with c1: lop = st.text_input("📚 Lớp:", "Lớp 6")
+with c2: ten_bai = st.text_input("📌 Tên bài học:", placeholder="Ví dụ: GRAMMAR...")
 
 noidung_bosung = st.text_area("✍️ Ghi chú thêm (nội dung/kiến thức):", height=100)
 yeu_cau_them = st.text_input("💡 Yêu cầu đặc biệt:", placeholder="Ví dụ: Tích hợp trò chơi khởi động...")
@@ -253,7 +253,7 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
                 
                 # --- PROMPT CHI TIẾT CỦA THẦY (BẢN GỐC ĐẦY ĐỦ) ---
                 prompt_instruction = f"""
-                Đóng vai là một Giáo viên Tiểu học giỏi, am hiểu chương trình GDPT 2018.
+                Đóng vai là một Giáo viên TRUNG HỌC CƠ SỞ giỏi, am hiểu chương trình GDPT 2018.
                 Nhiệm vụ: Soạn Kế hoạch bài dạy (Giáo án) cho bài: "{ten_bai}" - {lop}.
 
                 DỮ LIỆU ĐẦU VÀO:
@@ -277,10 +277,10 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
                 2. Học sinh
 
                 III. Tiến trình dạy học
-                [QUAN TRỌNG] PHẦN NÀY PHẢI TRÌNH BÀY DƯỚI DẠNG BẢNG (MARKDOWN TABLE) 2 CỘT. 
+                [QUAN TRỌNG] PHẦN NÀY PHẢI TRÌNH BÀY DƯỚI DẠNG BẢNG (MARKDOWN TABLE) 3 CỘT. 
                 TÊN CÁC HOẠT ĐỘNG PHẢI NẰM Ở CỘT 1 (HOẠT ĐỘNG GIÁO VIÊN).
 
-                | HOẠT ĐỘNG CỦA GIÁO VIÊN | HOẠT ĐỘNG CỦA HỌC SINH |
+                | HOẠT ĐỘNG CỦA GIÁO VIÊN | HOẠT ĐỘNG CỦA HỌC SINH || NỘI DUNG |
                 |---|---|
                 | **1. Hoạt động 1 - Khởi động:**<br>- GV tổ chức... | - HS tham gia... |
                 | **2. Hoạt động 2 - Hình thành kiến thức mới:**<br>- GV hướng dẫn... | - HS quan sát... |
@@ -293,7 +293,7 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
                 - Tích hợp Học thông qua chơi vào 1 số hoạt động phù hợp.
                 - Riêng các trò chơi trong tiến trình dạy học cần TRÌNH BÀY RÕ LUẬT CHƠI.
                 - Không cần ghi "Mục tiêu HTQC".
-                - Tiết học chỉ có 35 phút, hãy điều chỉnh lượng kiến thức và hoạt động hợp lý.
+                - Tiết học chỉ có 45 phút, hãy điều chỉnh lượng kiến thức và hoạt động hợp lý.
                 - Không kèm chú thích nguồn trong bài soạn.
                 - Tuyệt đối chỉ bao gồm 4 Hoạt động, không phát sinh thêm.
                 - LUÔN LUÔN TUÂN THỦ THEO NHỮNG YÊU CẦU TRÊN
@@ -347,4 +347,4 @@ if st.button("🚀 SOẠN GIÁO ÁN NGAY"):
 
 # --- CHÂN TRANG ---
 st.markdown("---")
-st.markdown("<div style='text-align: center; color: #666;'>© 2025 - Lù Seo Sần - Trường PTDTBT Tiểu học Bản Ngò - ĐT: 097 1986 343</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align: center; color: #666;'>© 2025 - Trần Văn Thọ - Trường PTDTBT THCS MƯỜNG LẠN - ĐT: 097 3989 800</div>", unsafe_allow_html=True)
